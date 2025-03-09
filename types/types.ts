@@ -1,8 +1,15 @@
+// Losse Props
 export interface Page {
   title: string;
   link: string;
   isMenuItem?: boolean;
 }
+
+export interface Bulletpoint {
+  title: string;
+  description: string;
+}
+
 // Navbar Props
 export interface NavbarProps {
   logo: string;
@@ -27,6 +34,15 @@ export interface HeroProps {
 // Skill Props
 export interface SkillsProps {
   image: string;
+}
+
+// About Props
+export interface AboutProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  bulletpoints: Bulletpoint[];
+  description2: string;
 }
 
 // Footer Props

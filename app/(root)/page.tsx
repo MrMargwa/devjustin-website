@@ -1,7 +1,7 @@
 import AboutBlock from "@/components/AboutBlock";
 import HeroBlock from "@/components/HeroBlock";
 import SkillsBlock from "@/components/SkillsBlock";
-import { HeroData, SkillsData } from "@/data/data";
+import { HeroData, SkillsData, AboutData } from "@/data/data";
 
 export default function HomePage() {
   return (
@@ -9,7 +9,8 @@ export default function HomePage() {
       <HeroBlock data={HeroData} />
 
       <SkillsBlock skills={SkillsData} />
-      <AboutBlock />
+
+      <AboutBlock data={AboutData} />
       {/* <Projectslock /> */}
       {/* <ContactBlock /> */}
     </>

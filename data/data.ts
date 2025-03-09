@@ -1,6 +1,7 @@
 // -----=Navbar Data=-----//
 const NavbarData = {
-  logo: "/assets/img/logo/logo.png",
+  logo: "https://res.cloudinary.com/dp0ir9m4n/image/upload/v1740512123/DevJustin_LOGO.jpg",
+  // logo: "https://res.cloudinary.com/dp0ir9m4n/image/upload/v1741455383/DevJustin-Logo.png",
   info: {
     address: "8701GJ Friesland, Bolsward",
     email: "jharinga@devjustin.nl",
@@ -93,9 +94,45 @@ const SkillsData = [
   },
 ];
 
+// -----=About Data=----- //
+const AboutData = {
+  title: "Justin Haringa",
+  subtitle: "Wie Ben Ik?",
+  description:
+    "Een paar jaar geleden was ik vooral bezig met gamen en had ik weinig interesse in IT. Dat veranderde toen mijn vader me kennis liet maken met programmeren. Hij leerde me de basis en liet me zien wat je allemaal kunt maken met code. Sindsdien is mijn interesse uitgegroeid tot een echte passie.",
+  bulletpoints: [
+    {
+      title: "Van gamer naar developer",
+      description: "Mijn interesse in IT begon dankzij mijn vader.",
+    },
+    {
+      title: "Opleidingen",
+      description:
+        "Ik volg de opleiding Medewerker ICT Support bij Firda in Leeuwarden.",
+    },
+    {
+      title: "Projecten",
+      description:
+        "Ik heb gewerkt aan Unity games, websites, webshops en mobile apps.",
+    },
+    {
+      title: "Toekomstplannen",
+      description: "Mijn doel is om door te groeien tot software developer.",
+    },
+    {
+      title: "Dromen",
+      description:
+        "Als ik mijn rijbewijs heb, wil ik graag een drift car en een snelle racemotor.",
+    },
+  ],
+  description2:
+    "In mijn vrije tijd blijf ik graag experimenteren met technologie. Als ik mijn rijbewijs heb, wil ik meer gaan rijden – en ooit een drift car en een snelle racemotor bezitten. Wat begon door mijn vader, is nu een echte passie geworden!",
+};
+
 // -----=Footer Data=-----//
 const FooterData = {
-  logo: "/assets/img/logo/w_logo.png",
+  logo: "https://res.cloudinary.com/dp0ir9m4n/image/upload/v1740512123/DevJustin_LOGO.jpg",
+  // logo: "/assets/img/logo/w_logo.png",
   description:
     "  Lorem ipsum dolor sit amet consectetur \nadipisicing elit. Ea, iure earum sunt, iste \neligendi atque sit quaerat assumenda natus \nab enim totam eos alias veritatis. Similique \nadipisci dignissimos dicta eum.",
   pages: [
@@ -128,4 +165,4 @@ const FooterData = {
   },
 };
 
-export { NavbarData, HeroData, SkillsData, FooterData };
+export { NavbarData, HeroData, SkillsData, AboutData, FooterData };

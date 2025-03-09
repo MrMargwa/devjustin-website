@@ -62,7 +62,8 @@
     --tg-heading-font-weight: 700;
     --tg-body-line-height: 1.62;
     --tg-heading-line-height: 1.2;
-    --tg-text-transform: capitalize;
+    /* --tg-text-transform: ; */
+    /* --tg-text-transform: capitalize; */
     --tg-blue: #0049DC;
     --tg-metallic-blue: #324B7D;
     --tg-cornflower-blue: #B3CCFF;
@@ -230,7 +231,7 @@ p {
     font-weight: var(--tg-body-font-weight);
     line-height: var(--tg-body-line-height);
     color: var(--tg-paragraph-color);
-    text-transform: var(--tg-text-transform);
+    /* text-transform: var(--tg-text-transform); */
     margin-bottom: 15px;
 }
 

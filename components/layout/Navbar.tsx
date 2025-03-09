@@ -15,7 +15,7 @@ export default function Navbar({
   data,
 }: {
   scroll: boolean;
-  // isMobileMenu: boolean;
+  isMobileMenu: boolean;
   handleMobileMenu: () => void;
   isOffcanvus: boolean;
   handleOffcanvus: () => void;
@@ -73,13 +73,16 @@ export default function Navbar({
               <div className="col-lg-5">
                 <div className="header-top-right">
                   <div className="header-social">
-                    {/* <ul className="list-wrap">
+                    <ul className="list-wrap">
                       <li>
-                        <Link href="#">
+                        <Link
+                          href="https://github.com/MrMargwa/devjustin-website"
+                          target="_blank"
+                        >
                           <i className="fab fa-github" />
                         </Link>
                       </li>
-                    </ul> */}
+                    </ul>
                   </div>
 
                   <div className="header-top-btn">
@@ -95,8 +98,8 @@ export default function Navbar({
           <div className="menu-area">
             <div className="row">
               <div className="col-12">
+                {/* <div className="mobile-nav-toggler" onClick={handleMobileMenu}> */}
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
-                  {/* <div className="mobile-nav-toggler" onClick={handleMobileMenu}> */}
                   <i className="fas fa-bars" />
                 </div>
 
@@ -109,6 +112,10 @@ export default function Navbar({
                           alt="Logo"
                           width={200}
                           height={100}
+                          style={{
+                            objectFit: "cover",
+                            transform: "scale(1.1,1.5)",
+                          }}
                         />
                       </Link>
                     </div>
@@ -172,6 +179,10 @@ export default function Navbar({
                           alt="Logo"
                           width={200}
                           height={100}
+                          style={{
+                            objectFit: "cover",
+                            transform: "scale(1.1,1.5)",
+                          }}
                         />
                       </Link>
                     </div>

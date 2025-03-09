@@ -1,6 +1,7 @@
+import { AboutProps, Bulletpoint } from "@/types/types";
 import Image from "next/image";
 
-export default function AboutBlock() {
+export default function AboutBlock({ data }: { data: AboutProps }) {
   return (
     <>
       <section id="about" className="about-area-three">
@@ -41,40 +42,24 @@ export default function AboutBlock() {
             <div className="col-lg-6">
               <div className="about-content-three">
                 <div className="section-title-two mb-20 tg-heading-subheading animation-style3">
-                  <span className="sub-title">Get To know US</span>
-                  <h2 className="title tg-element-title">
-                    Innovative Business Solutions for Financial Company
-                  </h2>
+                  <span className="sub-title">{data.subtitle}</span>
+                  <h2 className="title tg-element-title">{data.title}</h2>
                 </div>
-                <p className="info-one">
-                  Morem ipsum dolor sit amet, consectetur adipiscing elita
-                  florai psum dolor sit amet, consecteture.Borem ipsum dolor sit
-                  amet, consectetur adipiscing elita florai psum.
-                </p>
+                <p className="info-one">{data.description}</p>
                 <div className="about-list-two">
+                  {/* <div className="about-list-two"> */}
                   <ul className="list-wrap">
-                    <li>
-                      <i className="fas fa-arrow-right" />
-                      100% Better results
-                    </li>
-                    <li>
-                      <i className="fas fa-arrow-right" />
-                      Suspe ndisse suscipit sagittis
-                    </li>
-                    <li>
-                      <i className="fas fa-arrow-right" />
-                      promis specific timelineI guarantee
-                    </li>
-                    <li>
-                      <i className="fas fa-arrow-right" />
-                      Review Credit Reports
-                    </li>
+                    {data.bulletpoints.map((i: Bulletpoint, index: number) => (
+                      <li key={index}>
+                        <i className="fas fa-arrow-right" />
+                        <h6>
+                          {i.title} - {i.description}
+                        </h6>
+                      </li>
+                    ))}
                   </ul>
                 </div>
-                <p>
-                  Morem ipsum dolor sit amet, consectetur adipiscing elita
-                  florai psum dolor sit amet, consecteture.
-                </p>
+                <p>{data.description2}</p>
                 {/* <div className="about-author-info">
                   <div className="thumb">
                     <Image

@@ -56,7 +56,7 @@ export default function HeroBlock({ data }: { data: HeroProps }) {
         <div className="banner-shape-wrap">
           <Image
             src="/assets/img/banner/h2_banner_shape01.png"
-            alt=""
+            alt="logo"
             width={100}
             height={100}
           />
